@@ -46,7 +46,7 @@ while (remainingletters > 0 ) {
     //every time the player guesses the game needs to update 
     for (var j = 0; j < SmashBrosChar.length; j++) {
         if (SmashBrosChar[j] === ThePlayer) {
-            hiddenword[j] = ThePlayer; 
+            hiddenword[j] = ThePlayer.toLowerCase(); 
             remainingletters--; 
         }
     }
