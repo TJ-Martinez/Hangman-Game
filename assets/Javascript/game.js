@@ -31,7 +31,21 @@ while (remainingletters > 0 ) {
 
     alert(hiddenword.join(" "));
     
-
+    // This is my game starter. 
     var ThePlayer = prompt ("Guess a letter, or click Cancel to stop playing.");
+        if (ThePlayer === null) //This is if the player hits cancel they will end the loop and exit the game 
+        break;
+
+} else if (ThePlayer.length != 1) {
+    alert("Please enter a single letter.");
+
+} else {
+    //every time the player guesses the game needs to update 
+    for (var j = 0; j < SmashBrosChar.length; j++) {
+        if (SmashBrosChar[j]) === ThePlayer) {
+            hiddenword[j] = guess; 
+            remainingletters--; 
+        }
+    }
 }
 
