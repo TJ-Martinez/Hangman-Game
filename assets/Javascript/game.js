@@ -10,7 +10,7 @@
 
 var SmashBrosChar = ['Mario', 'Peach','Luigi','Cloud',];
 
-];
+console.log(SmashBrosChar)
 // Random word
 var SmashBrosChar= SmashBrosChar[Math.floor(Math.random()*SmashBrosChar.length)];
 
@@ -19,6 +19,8 @@ var hiddenword = [];
 for (var i = 0; i < SmashBrosChar.length; i++) {
 
     hiddenword[i]= "_";
+
+    console.log(hiddenword)
 }
     var remainingletters = SmashBrosChar.length;
 
