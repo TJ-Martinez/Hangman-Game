@@ -16,6 +16,7 @@ var SmashBrosChar= SmashBrosChar[Math.floor(Math.random()*SmashBrosChar.length)]
 
 //Answer Array where I create the _ _ _ _ for the word guess
 var hiddenword = [];
+
 for (var i = 0; i < SmashBrosChar.length; i++) {
 
     hiddenword[i]= "_";
@@ -28,7 +29,9 @@ while (remainingletters > 0 ) {
 
     //Show the user their progress in the game
 
-    alert(hiddenword.join(" "))
-    console.log(hiddenword)
+    alert(hiddenword.join(" "));
+    
+
+    var ThePlayer = prompt ("Guess a letter, or click Cancel to stop playing.");
 }
 
