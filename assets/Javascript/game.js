@@ -2,13 +2,13 @@
 //Set up variables for smash bro characters
     //set up seperate variables for letters?
     // make sure to find a way to use _ _ _ _
-//set of onkeyup
+//set Math.floor(Math.random) to create random word. 
 //Should I use conditionals or for loop?
     //
 //Bootstrap or Personal Css
 //HTML set up 
 
-var SmashBrosChar = ['Mario', 'Peach','Luigi','Cloud',];
+var SmashBrosChar = ['Mario', 'Peach','Luigi','Cloud','Mewtwo', 'Ganondorf', 'Link'];
 
 console.log(SmashBrosChar)
 // Random word
@@ -20,8 +20,15 @@ for (var i = 0; i < SmashBrosChar.length; i++) {
 
     hiddenword[i]= "_";
 
-    console.log(hiddenword)
 }
     var remainingletters = SmashBrosChar.length;
 
+// The loop for the game is here:
+while (remainingletters > 0 ) {
+
+    //Show the user their progress in the game
+
+    alert(hiddenword.join(" "))
+    console.log(hiddenword)
+}
 
