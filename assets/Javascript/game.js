@@ -10,12 +10,16 @@
 
 var SmashBrosChar = ['Mario', 'Peach','Luigi','Cloud',];
 
-document.onkeyup(event) {
+];
+// Random word
+var SmashBrosChar= SmashBrosChar[Math.floor(Math.random()*SmashBrosChar.length)];
 
-    var userguess= event.key;
+//Answer Array where I create the _ _ _ _ for the word guess
+var hiddenword = [];
+for (var i = 0; i < SmashBrosChar.length; i++) {
 
-    var CPUlv9= SmashBrosChar [Math.floor(Math.random()*SmashBrosChar.length]
+    hiddenword[i]= "_";
 }
-
+    var remainingletters = SmashBrosChar.length;
 
 
